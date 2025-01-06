@@ -1,6 +1,6 @@
-"use client"; // Required for client-side logic
+"use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation"; // Next.js navigation hook
+import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 
 const AuthPage = () => {
@@ -10,7 +10,7 @@ const AuthPage = () => {
   const router = useRouter();
 
   const toggleAuthMode = () => {
-    setIsSignUp(!isSignUp);
+    setIsSignUp((prev) => !prev);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,22 +18,24 @@ const AuthPage = () => {
     setLoading(true);
     setError(null);
 
-    // Simulate API request
     try {
-      const response = await fakeAuthAPI(isSignUp);
+      const response = await fakeAuthAPI();
       if (response.success) {
-        router.push("/"); // Redirect to home page on success
+        router.push("/");
       } else {
         setError("Invalid credentials. Please try again.");
       }
-    } catch (err) {
+    } catch (error) {
+      // Utilize the caught error
+      console.error("Error during authentication:", error);
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
   };
 
-  const fakeAuthAPI = async (isSignUp: boolean) => {
+  const fakeAuthAPI = async () => {
+    // Simulate API behavior
     return new Promise<{ success: boolean }>((resolve) =>
       setTimeout(() => resolve({ success: true }), 1000)
     );
