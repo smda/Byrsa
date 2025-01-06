@@ -1,0 +1,96 @@
+/* General Styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffff, #ffff);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  .card {
+    background: white;
+    color: #333;
+    width: 400px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0070f3;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .inputGroup label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .inputGroup input:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 112, 243, 0.2);
+  }
+  
+  .authButton {
+    width: 100%;
+    padding: 12px;
+    background: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .authButton:hover {
+    background: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  .toggleButton {
+    margin-top: 15px;
+    background: transparent;
+    color: #0070f3;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .toggleButton:hover {
+    color: #005bb5;
+  }
+  
