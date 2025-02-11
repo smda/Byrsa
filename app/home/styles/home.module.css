@@ -10,44 +10,44 @@
     top: 0;
     z-index: 1000;
 }
-  
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #007BFF;
 }
-  
+
 .navLinks {
     display: flex;
     gap: 20px;
 }
-  
+
 .navLink {
     text-decoration: none;
     color: #333333;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
-  
+
 .navLink:hover {
     color: #007BFF;
 }
-  
+
 .profileIconContainer {
     position: relative;
 }
-  
+
 .profileIcon {
     font-size: 1.5rem;
     color: #333333;
     cursor: pointer;
     transition: color 0.3s ease;
 }
-  
+
 .profileIcon:hover {
     color: #007BFF;
 }
-  
+
 /* Dropdown Menu */
 .dropdownMenu {
     position: absolute;
@@ -59,7 +59,7 @@
     width: 160px;
     z-index: 1000;
 }
-  
+
 .dropdownItem {
     display: block;
     padding: 10px 20px;
@@ -68,11 +68,11 @@
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
-  
+
 .dropdownItem:hover {
     background-color: #F5F5F5;
 }
-  
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -84,17 +84,17 @@
     background: linear-gradient(135deg, #007BFF, #00BFFF);
     color: #FFFFFF;
 }
-  
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-  
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
-  
+
 .ctaButton {
     padding: 14px 28px;
     font-size: 1rem;
@@ -105,25 +105,25 @@
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
 .ctaButton:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-  
+
 /* Course Cards */
 .courses {
     padding: 60px 20px;
     text-align: center;
 }
-  
+
 .courseGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
-  
+
 .courseCard {
     background-color: #FFFFFF;
     border-radius: 12px;
@@ -131,22 +131,22 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
 .courseCard:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-  
+
 .courseCard h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
-  
+
 .courseCard p {
     font-size: 0.9rem;
     color: #666666;
 }
-  
+
 /* Footer */
 .footer {
     padding: 20px;
@@ -154,26 +154,95 @@
     text-align: center;
     margin-top: 60px;
 }
-  
+
 .footerContent {
     max-width: 1200px;
     margin: 0 auto;
 }
-  
+
 .footerLinks {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 10px;
 }
-  
+
 .footerLink {
     text-decoration: none;
     color: #666666;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
-  
+
 .footerLink:hover {
     color: #007BFF;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .navLinks {
+        display: none; /* Hide nav links on mobile */
+    }
+
+    .profileIcon {
+        font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .ctaButton {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Course Section */
+    .courses {
+        padding: 40px 20px;
+    }
+
+    .courseGrid {
+        grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+    }
+
+    .courseCard {
+        padding: 15px;
+    }
+
+    .courseCard h3 {
+        font-size: 1rem;
+    }
+
+    .courseCard p {
+        font-size: 0.8rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 15px;
+    }
+
+    .footerLinks {
+        flex-direction: column; /* Stack footer links vertically */
+        gap: 10px;
+    }
 }
