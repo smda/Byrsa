@@ -21,7 +21,7 @@ const AuthPage = () => {
     try {
       const response = await fakeAuthAPI();
       if (response.success) {
-        router.push("/");
+        router.push("/home");
       } else {
         setError("Invalid credentials. Please try again.");
       }
