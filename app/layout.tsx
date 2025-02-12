@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "E-learning App",
+  title: "Do Learn",
 };
 
 export default function RootLayout({
