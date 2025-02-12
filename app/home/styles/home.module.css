@@ -11,6 +11,11 @@
     z-index: 1000;
 }
 
+.logo img {
+    height: 40px; /* Adjust size as needed */
+    width: auto;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;

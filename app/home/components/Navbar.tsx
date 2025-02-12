@@ -24,7 +24,11 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Ramy-Learn</div>
+        <div className={styles.logo}>
+          <Link href="/home">
+            <img src="/dolearn.png" alt="DoLearn Logo" className={styles.logoImage} />
+          </Link>
+        </div>
       <div className={styles.navLinks}>
         <Link href="/home" className={styles.navLink}>Home</Link>
         <Link href="/home" className={styles.navLink}>Courses</Link>
