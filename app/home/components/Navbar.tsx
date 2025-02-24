@@ -26,7 +26,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href="/home">
-            <img src="/dolearn.png" alt="DoLearn Logo" className={styles.logoImage} />
+            <img src="/Byrsa.png" alt="Byrsa Logo" className={styles.logoImage} />
           </Link>
         </div>
       <div className={styles.navLinks}>

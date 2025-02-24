@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Do Learn",
+  title: "Byrsa",
 };
 
 export default function RootLayout({

@@ -1,3 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -12,14 +18,14 @@
 }
 
 .logo img {
-    height: 40px; /* Adjust size as needed */
+    height: 40px;
     width: auto;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #007BFF;
+    color: #000000; /* Black for logo */
 }
 
 .navLinks {
@@ -29,13 +35,13 @@
 
 .navLink {
     text-decoration: none;
-    color: #333333;
+    color: #333333; /* Dark gray for links */
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .navLink:hover {
-    color: #007BFF;
+    color: #000000; /* Black on hover */
 }
 
 .profileIconContainer {
@@ -44,13 +50,13 @@
 
 .profileIcon {
     font-size: 1.5rem;
-    color: #333333;
+    color: #333333; /* Dark gray for icon */
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
 .profileIcon:hover {
-    color: #007BFF;
+    color: #000000; /* Black on hover */
 }
 
 /* Dropdown Menu */
@@ -69,13 +75,13 @@
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #333333;
+    color: #333333; /* Dark gray text */
     font-size: 0.9rem;
     transition: background-color 0.3s ease;
 }
 
 .dropdownItem:hover {
-    background-color: #F5F5F5;
+    background-color: #F5F5F5; /* Light gray on hover */
 }
 
 /* Hero Section */
@@ -85,26 +91,34 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg, #007BFF, #00BFFF);
-    color: #FFFFFF;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #FFFFFF, #F5F5F5); /* White to light gray gradient */
+    color: #000000; /* Black text */
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: 700; /* Bold for emphasis */
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 40px;
+    color: #666666; /* Slightly lighter text for contrast */
+}
+
+.ctaContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .ctaButton {
     padding: 14px 28px;
     font-size: 1rem;
-    color: #007BFF;
-    background-color: #FFFFFF;
+    color: #FFFFFF; /* White text */
+    background-color: #000000; /* Black background */
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -116,10 +130,33 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Course Cards */
+.secondaryButton {
+    padding: 14px 28px;
+    font-size: 1rem;
+    color: #000000; /* Black text */
+    background-color: transparent;
+    border: 2px solid #000000; /* Black border */
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondaryButton:hover {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+}
+
+/* Course Section */
 .courses {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
+    background-color: #F5F5F5; /* Light gray background for contrast */
+}
+
+.courses h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #000000; /* Black text */
 }
 
 .courseGrid {
@@ -130,7 +167,7 @@
 }
 
 .courseCard {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White background */
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -142,22 +179,101 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.courseIcon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
 .courseCard h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #000000; /* Black text */
 }
 
 .courseCard p {
     font-size: 0.9rem;
-    color: #666666;
+    color: #666666; /* Dark gray text */
+}
+
+.courseButton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #FFFFFF; /* White text */
+    background-color: #000000; /* Black background */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courseButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #FFFFFF; /* White background */
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #000000; /* Black text */
+}
+
+.testimonialGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.testimonialCard {
+    background-color: #F5F5F5; /* Light gray background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialCard p {
+    font-size: 0.9rem;
+    color: #666666; /* Dark gray text */
+    margin-bottom: 10px;
+}
+
+.testimonialCard span {
+    font-size: 0.8rem;
+    color: #000000; /* Black text */
+    font-weight: bold;
+}
+
+/* Call-to-Action Section */
+.ctaSection {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+}
+
+.ctaSection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ctaSection p {
+    font-size: 1rem;
+    margin-bottom: 40px;
 }
 
 /* Footer */
 .footer {
-    padding: 20px;
-    background-color: #FFFFFF;
+    padding: 40px 20px;
+    background-color: #FFFFFF; /* White background */
     text-align: center;
-    margin-top: 60px;
+    margin-top: auto;
 }
 
 .footerContent {
@@ -174,13 +290,13 @@
 
 .footerLink {
     text-decoration: none;
-    color: #666666;
+    color: #666666; /* Dark gray text */
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footerLink:hover {
-    color: #007BFF;
+    color: #000000; /* Black on hover */
 }
 
 /* Media Queries for Mobile Responsiveness */
@@ -204,7 +320,7 @@
 
     /* Hero Section */
     .hero {
-        padding: 60px 20px;
+        padding: 80px 20px;
     }
 
     .hero h1 {
@@ -215,9 +331,9 @@
         font-size: 1rem;
     }
 
-    .ctaButton {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .ctaContainer {
+        flex-direction: column;
+        gap: 10px;
     }
 
     /* Course Section */
@@ -241,9 +357,23 @@
         font-size: 0.8rem;
     }
 
+    /* Testimonials Section */
+    .testimonials {
+        padding: 40px 20px;
+    }
+
+    .testimonialGrid {
+        grid-template-columns: 1fr; /* Stack testimonials vertically on mobile */
+    }
+
+    /* Call-to-Action Section */
+    .ctaSection {
+        padding: 40px 20px;
+    }
+
     /* Footer */
     .footer {
-        padding: 15px;
+        padding: 20px;
     }
 
     .footerLinks {
