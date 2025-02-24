@@ -45,23 +45,24 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className={styles.testimonials}>
-        <h2>What Our Students Say</h2>
-        <div className={styles.testimonialGrid}>
-          <div className={styles.testimonialCard}>
-            <p>"Byrsa helped me transition into a new career in web development. Highly recommended!"</p>
-            <span>- John Doe</span>
-          </div>
-          <div className={styles.testimonialCard}>
-            <p>"The courses are well-structured and easy to follow. Great for beginners!"</p>
-            <span>- Jane Smith</span>
-          </div>
-          <div className={styles.testimonialCard}>
-            <p>"I love the hands-on projects. They really helped me solidify my skills."</p>
-            <span>- Alex Johnson</span>
-          </div>
+        <section className={styles.testimonials}>
+      <h2>What Our Students Say</h2>
+      <div className={styles.testimonialGrid}>
+        <div className={styles.testimonialCard}>
+          <p>&quot;Byrsa helped me transition into a new career in web development. Highly recommended!&quot;</p>
+          <span>- John Doe</span>
         </div>
-      </section>
+        <div className={styles.testimonialCard}>
+          <p>&quot;The courses are well-structured and easy to follow. Great for beginners!&quot;</p>
+          <span>- Jane Smith</span>
+        </div>
+        <div className={styles.testimonialCard}>
+          <p>&quot;I love the hands-on projects. They really helped me solidify my skills.&quot;</p>
+          <span>- Alex Johnson</span>
+        </div>
+      </div>
+    </section>
+
 
       {/* Call-to-Action Section */}
       <section className={styles.ctaSection}>

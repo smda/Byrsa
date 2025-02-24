@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image"; // Import Next.js Image
 import { useRouter } from "next/navigation"; // Import useRouter
 import { FaUserCircle } from "react-icons/fa";
 import { useState } from "react";
@@ -24,11 +25,18 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <Link href="/home">
-            <img src="/Byrsa.png" alt="Byrsa Logo" className={styles.logoImage} />
-          </Link>
-        </div>
+      <div className={styles.logo}>
+        <Link href="/home">
+          <Image 
+            src="/Byrsa.png" 
+            alt="Byrsa Logo" 
+            className={styles.logoImage} 
+            width={150} 
+            height={50} 
+            priority
+          />
+        </Link>
+      </div>
       <div className={styles.navLinks}>
         <Link href="/home" className={styles.navLink}>Home</Link>
         <Link href="/home" className={styles.navLink}>Courses</Link>
