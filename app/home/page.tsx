@@ -23,7 +23,6 @@ export default function Home() {
         <p>Your gateway to knowledge and skills. Start learning today!</p>
         <div className={styles.ctaContainer}>
           <button className={styles.ctaButton}>Explore Courses</button>
-          <button className={styles.secondaryButton}>Sign Up for Free</button>
         </div>
       </section>
 
